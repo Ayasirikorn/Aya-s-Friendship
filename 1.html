@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aya’s Friendship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+  body {
+            background-color: #FFBABA;
+            text-align: center;
+            font-family: "Noto Sans Thai", sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .phone-frame {
+            width: 100%;
+            max-width: 430px;
+            background: white;
+            min-height: 100vh;
+            color: #8B3A3A;
+             background-color: #FFBABA;
+        }
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            color: #8B3A3A;
+            height: 350px;
+        }
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .header-content img {
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+            display: block;
+        }
+        .container {
+            margin: 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: #8B3A3A;
+        }
+        .whitebtn {
+            text-decoration: none;
+            color: #8B3A3A;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px 10px;
+        }
+        .redbtn {
+            text-decoration: none;
+            color: white;
+            background-color: #A23636;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px 10px;
+            cursor: grab;
+            
+        }
+
+        a:hover, a:active {
+            transform: scale(1.05);
+        }
+        a {
+            transition: transform 0.3s ease;
+            text-decoration: none; cursor: pointer;
+        }
+        textarea {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 80%;
+            transition: border-color 0.3s;
+        }
+        textarea:focus, textarea:active {
+            border-color: #A23636;
+            outline: none;
+        }
+        textarea:focus::placeholder {
+            color: #A23636;
+            opacity: 1;
+        }
+        input[type="text"], input[type="range"] {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 8px 12px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus, input[type="text"]:active,
+        input[type="range"]:focus, input[type="range"]:active {
+            border-color: #A23636;
+            outline: none;
+        }
+        input[type="text"]:focus::placeholder {
+            color: #A23636;
+            opacity: 1;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            text-align: center;
+            align-items: center;
+        }
+
+        form button{
+            width: fit-content;
+        }
+        .header-text {
+            margin-top: 0px;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="header-content">
+            <img src="Logo.PNG" alt="Logo" />
+        </div>
+        <div class="container">
+            <h1>เยส !</h1>
+            <h3 style="font-weight: 500;">ขอบคุณนะ</h3>
+            <form action="https://formsubmit.co/sirikornnuntha@gmail.com" method="POST">
+
+                <br>  <br>  <br>  <br>  <br>  <br>  <br>
+                <h3>ชื่ออะไร</h3>
+                <input type="text" name="ชื่อ" placeholder="ชื่อของเธอน่ะ" required><br><br>
+                <h3>สนิทกับอายะมั้ย</h3>
+                <input type="range" id="range" name="ความสนิท" min="0" max="100" style="accent-color: #A23636;"><br><br>
+                <h3>อายะนิสัยเป็นอย่างไร</h3>
+                <div class="emoji-group">
+                    <input type="radio" name="นิสัย" value="🤣" style="accent-color: #A23636;"> 🤣
+                    <input type="radio" name="นิสัย" value="🥵" style="accent-color: #A23636;"> 🥵
+                    <input type="radio" name="นิสัย" value="😒" style="accent-color: #A23636;"> 😒
+                    <input type="radio" name="นิสัย" value="😡" style="accent-color: #A23636;"> 😡
+                </div>
+            <br><br>
+             <h3>อยากบอกอะไรกันไหม</h3>
+                <textarea name="ข้อความลับ" rows="5" placeholder="พิมพ์ที่นี่เลยนะ..."></textarea>
+                <button type="submit" class="redbtn">ยืนยันส่ง</button>
+            </form>
+        </div>
+
+                <br><br><br>
+        <p style="font-size: 16px;">ขอบคุณที่สละเวลาอันมีค่า</p>
+        <p style="font-size: 14px; margin-top: -10px;">แล้วเจอกันใหม่นะ TUP46</p>
+
+        <a href="index.html" class="whitebtn" style="margin: 30px auto 0 auto; display: block;">กลับสู่หน้าหลัก</a>
+    </div>
+</body>
+</html>

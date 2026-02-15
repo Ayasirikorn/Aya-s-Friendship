@@ -1,3 +1,172 @@
-<form action="/submit" method="post">
-  <input type="hidden" name="_next" value="/home">
-  <!-- existing form fields -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya’s Friendship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFBABA;
+            text-align: center;
+            font-family: "Noto Sans Thai", sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .phone-frame {
+            width: 100%;
+            max-width: 430px;
+            background: white;
+            min-height: 100vh;
+            color: #8B3A3A;
+             background-color: #FFBABA;
+        }
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            color: #8B3A3A;
+            height: 350px;
+        }
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .header-content img {
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+            display: block;
+        }
+        .container {
+            margin: 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: #8B3A3A;
+        }
+        .whitebtn {
+            text-decoration: none;
+            color: #8B3A3A;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px 10px;
+        }
+        .redbtn {
+            text-decoration: none;
+            color: white;
+            background-color: #A23636;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px 10px;
+            cursor: grab;
+            
+        }
+
+        a:hover, a:active {
+            transform: scale(1.05);
+        }
+        a {
+            transition: transform 0.3s ease;
+            text-decoration: none; cursor: pointer;
+        }
+        textarea {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 80%;
+            transition: border-color 0.3s;
+        }
+        textarea:focus, textarea:active {
+            border-color: #A23636;
+            outline: none;
+        }
+        textarea:focus::placeholder {
+            color: #A23636;
+            opacity: 1;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            text-align: center;
+            align-items: center;
+        }
+
+        form button{
+            width: fit-content;
+        }
+        .header-text {
+            margin-top: 0px;
+       
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Header.PNG" class="header-bg" alt="Header background">
+        <div class="header-content">
+            <img src="Logo.PNG" alt="Logo" />
+            <div class="header-text">
+            <p style="font-size: 14px; margin-top: 10px;">เราชื่ออายะ ยินดีที่ได้รู้จัก</p>
+            <p style="font-size: 14px; margin-top: -5px;">หรือบางคนอาจจะรู้จักแล้ว ( ไม่ ทุกคนต้องรู้จักกูอยู่แล้วสิ )</p>
+        </div>
+        </div>
+    </header>
+    <div class="phone-frame">
+        <div class="container">
+            <h2>อยากมาร่วมสร้างความทรงจำดี ๆ ให้เราก่อนจบม. 3 ไหม</h2>
+            <a href="1.html" class="whitebtn">อยากมากก 💕</a>
+            <a href="1.html" class="whitebtn">ได้เลย !</a>
+            <a href="2.html" class="whitebtn">ไม่ 🤮🤢</a>
+            <br><br><br><br><br>
+            <a href="https://wbo.ophir.dev/boards/Nkp629EK2LweVQ7IlHH-BWnyt-qRe0mICHSM8R5u23E-#245,307,0.2" target="_blank" class="redbtn">เขียนเสื้อออนไลน์แบบสับ</a>
+            <a href="https://open.spotify.com/playlist/0I5xGtBKylMBTJzWfchsfm?si=AeuA-sxgTwKmJ_iUexPkRQ&pt=7e80c0cd9734632662aea79f81f5ed41&pi=CwP05XntQEOf2" target="_blank" class="redbtn">ร่วมสร้างความทรงจำด้วยเพลง</a>
+
+           <br><br>
+            <h3>ข้อความปริศนาถึงอายะ</h3>
+            <form action="https://formsubmit.co/sirikornnuntha@gmail.com" method="POST">
+<input type="hidden" name="_next" value="https://ayasirikorn.github.io/Aya-s-Friendship/index.html">
+                <textarea name="ข้อความลับ" rows="5" placeholder="พิมพ์ที่นี่เลยนะ..."></textarea>
+                <button type="submit" class="redbtn">ยืนยันส่ง</button>
+            </form>
+        </div>
+        <br><br><br>
+        <p style="font-size: 16px;">ขอบคุณที่สละเวลาอันมีค่า</p>
+        <p style="font-size: 14px; margin-top: -10px;">แล้วเจอกันใหม่นะ TUP46</p>
+    </div>
+</body>
+</html>
